@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "internetgymmx_backend": {
+      "main": "src/internetgymmx_backend/main.mo",
+      "type": "motoko"
+    },
+    "internetgymmx_frontend": {
+      "dependencies": [
+        "internetgymmx_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/internetgymmx_frontend/src/index.html"
+      },
+      "source": [
+        "src/internetgymmx_frontend/assets",
+        "dist/internetgymmx_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

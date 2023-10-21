@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Bearing Tools Ags</title>
+		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div class="navbar">
+			<span class="logo">Bearing Tools Ags</span>
+		</div>
+
+		<div style="padding: 0 1.2em; margin: .8em 0;">
+			<h1>Herramientas para el cálculo de rodamientos</h1>
+			<h2>La primera aplicación de su tipo completamente On-Chain</h2>
+		</div>
+
+
+		<div class="midLy">
+			<!-- inner layout start -->
+			<div class="midInner">
+				<div class="ly-card1">
+					<strong>¿Sabías que?<strong>
+					<p>
+						El ingeniero promedio tarda alrededor de 30 a 60 minutos en realizar estos cálculos.
+						JKF ayuda al desarrollo de planos, sin embargo, se crean a partir de los diametros 
+						y no a partir de las cargas que soporta, esta app esta diseñada para acelerar el 
+						proceso y tomar en cuenta algo tan fundamental como la fuerzas que soportan.
+					</p>
+				</div>
+			</div>
+			<!-- inner layout ends here -->
+			<div class="ly-card">
+				<span style="margin-left: 15px; font-size: 1.2em;">Calcular rotamientos</span>
+				<br>
+				<button type="button" id="abrir-editor" class="openBtn">IR</button>
+			</div>
+		</div>
+
+
+		<div class="globalContainer" id="modal-editor">
+			<div class="modalContainer">
+				<div style="padding: 10px 10px 0; display: flex; justify-content: space-between;">
+					<strong>Panel de edición</strong>
+					<span class="close" id="cerrar-editor">cerrar ventana</span>
+				</div>
+
+
+				<div class="grid"><!-- grid div -->
+					<div class="child">
+						<form id="form-uno">
+							<label class="label">Crear cálculo</label>
+							<input type="number" name="dato1" class="input" placeholder="Vida útil del rodamiento" />
+							<input type="number" name="dato2" class="input" placeholder="Carga axial" />
+							<input type="number" name="dato3" class="input" placeholder="Carga radial" />
+							<input type="number" name="dato4" class="input" placeholder="N° de revoluciones" />
+							<button type="submit" class="formBtn">crear</button>
+						</form>
+					</div>
+				</div><!-- grid div ending -->
+			</div>
+		</div>
+
+		<script defer type="module" src="./index.js"></script>
+	</body>
+</html>
